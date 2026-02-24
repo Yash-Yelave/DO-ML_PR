@@ -1,3 +1,4 @@
-function showMessage(){ 
-    document.getElementById("msg").innerHTML = "Website deployed successfully using GitHub Pages!"; 
+function showMessage() {
+  document.getElementById("msg").innerHTML =
+    "Website deployed successfully using GitHub Pages!";
 }
