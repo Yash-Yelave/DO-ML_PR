@@ -1,4 +1,16 @@
+const messages = [
+  "Pipeline successful: Artifacts deployed! 🚀",
+  "DevOps automated: Build complete. ✅",
+  "Cloud sync active: Version 2.0 live! ☁️",
+  "GitHub Pages updated: Site is fresh. 🔥",
+  "Continuous testing passed: Code verified! 🛠️"
+];
+
 function showMessage() {
-  document.getElementById("msg").innerHTML =
-    "Website deployed successfully using GitHub Pages!";
+  const randomIndex = Math.floor(Math.random() * messages.length);
+  const msgElement = document.getElementById("msg");
+  msgElement.innerHTML = messages[randomIndex];
+  msgElement.style.color = "#6366f1";
+  msgElement.style.fontWeight = "bold";
 }
+
